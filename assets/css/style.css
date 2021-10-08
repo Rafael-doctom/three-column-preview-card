@@ -55,7 +55,6 @@ body{
 }
 
 /* text */
-
 .text{
     width: 100%;
     max-width: 95%;
@@ -66,3 +65,49 @@ body{
     color: var(--ver-light-gray);
     font-family: 'Lexend Deca', sans-serif;
 }
+
+/* butons */
+.buttonContent button{
+    text-align: center;
+    padding:15px 25px;
+    border:0;
+    margin-top: -30px;
+    border-radius: 30px;
+}
+.buttonOranged{
+    background:white; 
+    color: hsl(31, 77%, 52%); 
+    border: 2px solid white;
+}
+
+.buttonBlue{
+    background:white; 
+    color: hsl(184, 100%, 22%); 
+    border: 2px solid white;
+}
+.buttonGreen{
+    background:white; 
+    color: hsl(179, 100%, 13%); 
+    border: 2px solid white;
+}
+
+.buttonContent button:hover{
+    background-color: var(--Very-dark-cyan);
+    color: var(--Very-light-gray);
+    border:2px solid white;
+}
+
+.attribution{
+    margin-top:-120px;
+    display: flex;
+    justify-content: center;
+    
+}
+.attribution span{
+    color:black;
+    margin-left: 1rem;;
+}
+.attribution a{
+    text-decoration: none;
+}
+/* media queries */

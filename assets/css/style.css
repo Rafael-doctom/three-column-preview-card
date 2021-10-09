@@ -5,14 +5,13 @@ body{
     color:white;
 }
 
-/* container */
-#container{
+/* main */
+#main{
     display: flex;
     justify-content: center;
     width: 50%;
     margin:10% auto;
 }
-
 
 
 /*  items container */
@@ -101,7 +100,6 @@ body{
     margin-top:-120px;
     display: flex;
     justify-content: center;
-    
 }
 .attribution span{
     color:black;
@@ -110,4 +108,82 @@ body{
 .attribution a{
     text-decoration: none;
 }
+
 /* media queries */
+
+@media (min-width: 768px) and (max-width: 1023px) { 
+    #main{
+    display: flex;
+    flex-direction: column;
+    }
+    .attribution{
+        margin-top:-70px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 767px) { 
+    #main{
+    display: flex;
+    flex-direction: column;
+    }
+    .sedan{
+        background-color: hsl(31, 77%, 52%);
+        height: 60vh;
+        text-align: left;
+        line-height: 1.5;
+    }
+    .suv{
+        background-color: hsl(184, 100%, 22%);
+        height: 60vh;
+        text-align: left;
+        line-height: 1.5;
+    }
+      .luxury{
+        background-color: hsl(179, 100%, 13%);
+        height: 60vh;
+        text-align: left;
+        line-height: 1.5;
+    }
+    .attribution{
+        margin-top:-30px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+@media (min-width: 320px) and (max-width: 424px) { 
+    #main{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    }
+    .sedan{
+        background-color: hsl(31, 77%, 52%);
+        height: 60vh;
+        text-align: left;
+        line-height: 1.5;
+        width: 50vw;
+    }
+    .suv{
+        background-color: hsl(184, 100%, 22%);
+        height: 60vh;
+        text-align: left;
+        line-height: 1.5;
+        width: 50vw;
+    }
+      .luxury{
+        background-color: hsl(179, 100%, 13%);
+        height: 60vh;
+        text-align: left;
+        line-height: 1.5;
+        width: 50vw;
+    }
+    .attribution{
+        margin-top:10px;
+        display: flex;
+        justify-content: center;
+    }
+}

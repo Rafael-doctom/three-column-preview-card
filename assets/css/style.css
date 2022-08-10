@@ -108,9 +108,6 @@ body {
 }
 
 @media (min-width: 1440px) {
-    body {
-        background-color: red;
-    }
 
     #main {
         width: 60%;

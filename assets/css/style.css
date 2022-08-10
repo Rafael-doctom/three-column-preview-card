@@ -1,195 +1,246 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
-body{
-    font-size:15px;
-    color:white;
+
+body {
+    font-size: 15px;
+    color: white;
 }
 
-/* main */
-#main{
+#main {
     display: flex;
     justify-content: center;
     width: 50%;
-    margin:10% auto;
+    margin: 10% auto;
 }
 
-
-/*  items container */
-.sedan{
+.sedan {
     background-color: hsl(31, 77%, 52%);
     padding: 20px;
     height: 40vh;
-
-    padding: 25px 35px;
+    padding: 55px 35px;
     text-align: left;
     line-height: 1.5;
+    border-radius: 10px 0 0px 10px;
 }
 
-
-.suv{
+.suv {
     background-color: hsl(184, 100%, 22%);
     padding: 20px;
     height: 40vh;
-
-    padding: 25px 35px;
+    padding: 55px 35px;
     text-align: left;
     line-height: 1.5;
 }
 
-.luxury{
+.luxury {
     background-color: hsl(179, 100%, 13%);
     padding: 20px;
     height: 40vh;
-
-    padding: 25px 35px;
+    padding: 55px 35px;
     text-align: left;
     line-height: 1.5;
+    border-radius: 0px 10px 10px 0px;
 }
 
-
-/*  title */
-.title{
+.title {
     font-family: 'Lexend Deca', sans-serif;
-
 }
 
-/* text */
-.text{
+.text {
     width: 100%;
     max-width: 95%;
     text-align: left;
     font-size: 15px;
-
     margin: 30px 0 50px 0;
     color: var(--ver-light-gray);
     font-family: 'Lexend Deca', sans-serif;
 }
 
-/* butons */
-.buttonContent button{
+.buttonContent button {
     text-align: center;
-    padding:15px 25px;
-    border:0;
+    padding: 15px 25px;
+    border: 0;
     margin-top: -30px;
     border-radius: 30px;
 }
-.buttonOranged{
-    background:white; 
-    color: hsl(31, 77%, 52%); 
+
+.buttonOranged {
+    background: white;
+    color: hsl(31, 77%, 52%);
     border: 2px solid white;
+    cursor: pointer;
 }
 
-.buttonBlue{
-    background:white; 
-    color: hsl(184, 100%, 22%); 
+.buttonBlue {
+    background: white;
+    color: hsl(184, 100%, 22%);
     border: 2px solid white;
-}
-.buttonGreen{
-    background:white; 
-    color: hsl(179, 100%, 13%); 
-    border: 2px solid white;
+    cursor: pointer;
 }
 
-.buttonContent button:hover{
+.buttonGreen {
+    background: white;
+    color: hsl(179, 100%, 13%);
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.buttonContent button:hover {
     background-color: var(--Very-dark-cyan);
     color: var(--Very-light-gray);
-    border:2px solid white;
+    border: 2px solid white;
 }
 
-.attribution{
-    margin-top:-120px;
+.attribution {
+    margin-top: -2rem;
     display: flex;
     justify-content: center;
 }
-.attribution span{
-    color:black;
-    margin-left: 1rem;;
+
+.attribution span {
+    color: black;
+    margin-left: 1rem;
+    ;
 }
-.attribution a{
+
+.attribution a {
     text-decoration: none;
 }
 
-/* media queries */
-@media (max-width: 1024px)  { 
-    #main{
-    display: flex;
-    flex-direction: row;
+@media (min-width: 1440px) {
+    body {
+        background-color: red;
+    }
+
+    #main {
+        width: 60%;
+    }
+
+}
+
+
+@media (max-width: 1024px) {
+    #main {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+    }
+
+    .sedan,
+    .suv,
+    .luxury {
+        height: 50vh;
     }
 }
 
 
-@media (min-width: 768px) and (max-width: 1023px) { 
-    #main{
-    display: flex;
-    flex-direction: column;
+@media (max-width: 768px) {
+    #main {
+        display: flex;
+        flex-direction: column;
     }
-    .attribution{
-        margin-top:-70px;
+
+    .sedan {
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .suv {
+        border-radius: 0px;
+    }
+
+    .luxury {
+        line-height: 1.5;
+        border-radius: 0px 0px 10px 10px;
+    }
+
+
+
+    .attribution {
+        margin-top: -30px;
         display: flex;
         justify-content: center;
     }
 }
 
-@media (min-width: 425px) and (max-width: 767px) { 
-    #main{
-    display: flex;
-    flex-direction: column;
+@media (max-width: 425px) {
+    #main {
+        display: flex;
+        flex-direction: column;
     }
-    .sedan{
-        background-color: hsl(31, 77%, 52%);
-        height: 60vh;
-        text-align: left;
-        line-height: 1.5;
+
+    .sedan {
+        border-radius: 10px 10px 0px 0px;
     }
-    .suv{
-        background-color: hsl(184, 100%, 22%);
-        height: 60vh;
-        text-align: left;
-        line-height: 1.5;
+
+    .suv {
+        border-radius: 0px;
+        height: 55vh;
     }
-      .luxury{
-        background-color: hsl(179, 100%, 13%);
-        height: 60vh;
-        text-align: left;
-        line-height: 1.5;
+
+    .luxury {
+        border-radius: 0px 0px 10px 10px;
     }
-    .attribution{
-        margin-top:-30px;
+
+    .attribution {
+        margin-top: -0px;
         display: flex;
         justify-content: center;
     }
 }
 
 
-@media (min-width: 320px) and (max-width: 424px) { 
-    #main{
-    display: flex;
-    flex-direction: column;
-    margin-left:50px;
+@media (max-width: 375px) {
+    #main {
+        display: flex;
+        flex-direction: column;
     }
-    .sedan{
-        background-color: hsl(31, 77%, 52%);
-        height: 60vh;
-        text-align: left;
-        line-height: 1.5;
-        width: 50vw;
+
+    .sedan {
+        border-radius: 10px 10px 0px 0px;
+        height: 55vh;
     }
-    .suv{
-        background-color: hsl(184, 100%, 22%);
-        height: 60vh;
-        text-align: left;
-        line-height: 1.5;
-        width: 50vw;
+
+    .suv {
+        border-radius: 0px;
+        height: 55vh;
     }
-      .luxury{
-        background-color: hsl(179, 100%, 13%);
-        height: 60vh;
-        text-align: left;
-        line-height: 1.5;
-        width: 50vw;
+
+    .luxury {
+        border-radius: 0px 0px 10px 10px;
+        height: 55vh;
     }
-    .attribution{
-        margin-top:10px;
+
+    .attribution {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 320px) {
+    #main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sedan {
+        border-radius: 10px 10px 0px 0px;
+        height: 65vh;
+    }
+
+    .suv {
+        border-radius: 0px;
+        height: 65vh;
+    }
+
+    .luxury {
+        border-radius: 0px 0px 10px 10px;
+        height: 65vh;
+    }
+
+    .attribution {
+        margin-top: 10px;
         display: flex;
         justify-content: center;
     }
